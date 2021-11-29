@@ -3,7 +3,15 @@ import java.util.Scanner;
 public class Phone {
 
     private String owner;
-    private int OwnerTelephoneNumber;
+    private String ownerTelephoneNumber;
+
+
+
+    public Phone(String owner, String ownerTelephoneNumber )
+    {
+        this.owner = owner;
+        this.ownerTelephoneNumber = ownerTelephoneNumber;
+    }
 
 
 
@@ -40,12 +48,12 @@ public class Phone {
         this.owner = owner;
     }
 
-    public int getOwnerTelephoneNumber() {
-        return OwnerTelephoneNumber;
+    public String getOwnerTelephoneNumber() {
+        return ownerTelephoneNumber;
     }
 
-    public void setOwnerTelephoneNumber(int ownerTelephoneNumber) {
-        OwnerTelephoneNumber = ownerTelephoneNumber;
+    public void setOwnerTelephoneNumber(String ownerTelephoneNumber) {
+        this.ownerTelephoneNumber = ownerTelephoneNumber;
     }
 
 
